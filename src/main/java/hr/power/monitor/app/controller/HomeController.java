@@ -1,4 +1,4 @@
-package hr.power.monitor.app.home;
+package hr.power.monitor.app.controller;
 
 import java.time.LocalDateTime;
 
@@ -22,6 +22,11 @@ public class HomeController {
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl("pages/widgets.html");
         return redirectView;
+    }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
     }
 
 }

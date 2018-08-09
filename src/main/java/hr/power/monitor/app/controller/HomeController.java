@@ -14,7 +14,7 @@ public class HomeController {
     @RequestMapping("/")
     public String index(Model model) {
         model.addAttribute("now", LocalDateTime.now());
-        return "index";
+        return "power/main";
     }
 
     @RequestMapping("/demo")
